@@ -134,7 +134,7 @@
 <p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
 <p>test.. test... test..... test?..... test!....</p>
 <p>!!!!!! ???? ,,  -- ---</p>
-<p>&quot;Smartypants, double quotes&quot; and 'single quotes'</p>
+<p>"Smartypants, double quotes" and 'single quotes'</p>
 <h2 id="emphasis">Emphasis</h2>
 <p><strong>This is bold text</strong></p>
 <p><strong>This is bold text</strong></p>
@@ -198,22 +198,18 @@
 <h2 id="code">Code</h2>
 <p>Inline <code>code</code></p>
 <p>Indented code</p>
-<pre style="background-color:#fafafa;color:#383a42;"><code><span>// Some comments
-</span><span>line 1 of code
-</span><span>line 2 of code
-</span><span>line 3 of code
-</span></code></pre>
-<p>Block code &quot;fences&quot;</p>
-<pre style="background-color:#fafafa;color:#383a42;"><code><span>Sample text here...
-</span></code></pre>
+<pre class="giallo" style="color: #383A42; background-color: #FAFAFA;"><code data-lang="plain"><span class="giallo-l"><span>// Some comments</span></span>
+<span class="giallo-l"><span>line 1 of code</span></span>
+<span class="giallo-l"><span>line 2 of code</span></span>
+<span class="giallo-l"><span>line 3 of code</span></span></code></pre>
+<p>Block code "fences"</p>
+<pre class="giallo" style="color: #383A42; background-color: #FAFAFA;"><code data-lang="plain"><span class="giallo-l"><span>Sample text here...</span></span></code></pre>
 <p>Syntax highlighting</p>
-<pre data-lang="js" style="background-color:#fafafa;color:#383a42;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#a626a4;">var </span><span style="color:#0184bc;">foo </span><span style="color:#a626a4;">= function </span><span>(</span><span style="color:#e45649;">bar</span><span>) {
-</span><span>  </span><span style="color:#a626a4;">return </span><span style="color:#e45649;">bar</span><span style="color:#a626a4;">++</span><span>;
-</span><span>};
-</span><span>
-</span><span style="color:#c18401;">console</span><span>.</span><span style="color:#0184bc;">log</span><span>(</span><span style="color:#0184bc;">foo</span><span>(</span><span style="color:#c18401;">5</span><span>));
-</span></code></pre>
-<h2 id="tables">Tables</h2>
+<pre class="giallo" style="color: #383A42; background-color: #FAFAFA;"><code data-lang="javascript"><span class="giallo-l"><span style="color: #A626A4;">var</span><span style="color: #4078F2;"> foo</span><span style="color: #0184BC;"> =</span><span style="color: #A626A4;"> function</span><span> (bar) {</span></span>
+<span class="giallo-l"><span style="color: #A626A4;">  return</span><span> bar</span><span style="color: #0184BC;">++</span><span>;</span></span>
+<span class="giallo-l"><span>};</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>console.</span><span style="color: #4078F2;">log</span><span>(</span><span style="color: #4078F2;">foo</span><span>(</span><span style="color: #986801;">5</span><span>));</span></span></code></pre><h2 id="tables">Tables</h2>
 <table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody>
 <tr><td>data</td><td>path to data files to supply the data that will be passed into templates.</td></tr>
 <tr><td>engine</td><td>engine to be used for processing templates. Handlebars is the default.</td></tr>
@@ -226,8 +222,8 @@
 <tr><td style="text-align: right">ext</td><td style="text-align: right">extension to be used for dest files.</td></tr>
 </tbody></table>
 <h2 id="links">Links</h2>
-<p><a href="http://dev.nodeca.com">link text</a></p>
-<p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
+<p><a rel="external" href="http://dev.nodeca.com">link text</a></p>
+<p><a rel="external" title="title text!" href="http://nodeca.github.io/pica/demo/">link with title</a></p>
 <p>Autoconverted link https://github.com/nodeca/pica (enable linkify to see)</p>
 <h2 id="images">Images</h2>
 <p><img src="https://octodex.github.com/images/minion.png" alt="Minion" />
@@ -237,56 +233,54 @@
 <p>With a reference later in the document defining the URL location:</p>
 <h2 id="plugins">Plugins</h2>
 <p>The killer feature of <code>markdown-it</code> is very effective support of
-<a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">syntax plugins</a>.</p>
-<h3 id="emojies"><a href="https://github.com/markdown-it/markdown-it-emoji">Emojies</a></h3>
+<a rel="external" href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">syntax plugins</a>.</p>
+<h3 id="emojies"><a rel="external" href="https://github.com/markdown-it/markdown-it-emoji">Emojies</a></h3>
 <blockquote>
 <p>Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:</p>
 <p>Shortcuts (emoticons): :-) :-( 8-) ;)</p>
 </blockquote>
-<p>see <a href="https://github.com/markdown-it/markdown-it-emoji#change-output">how to change output</a> with twemoji.</p>
-<h3 id="subscript-superscript"><a href="https://github.com/markdown-it/markdown-it-sub">Subscript</a> / <a href="https://github.com/markdown-it/markdown-it-sup">Superscript</a></h3>
+<p>see <a rel="external" href="https://github.com/markdown-it/markdown-it-emoji#change-output">how to change output</a> with twemoji.</p>
+<h3 id="subscript-superscript"><a rel="external" href="https://github.com/markdown-it/markdown-it-sub">Subscript</a> / <a rel="external" href="https://github.com/markdown-it/markdown-it-sup">Superscript</a></h3>
 <ul>
 <li>19^th^</li>
 <li>H~2~O</li>
 </ul>
-<h3 id="ins"><a href="https://github.com/markdown-it/markdown-it-ins">&lt;ins&gt;</a></h3>
+<h3 id="ins"><a rel="external" href="https://github.com/markdown-it/markdown-it-ins">&lt;ins&gt;</a></h3>
 <p>++Inserted text++</p>
-<h3 id="mark"><a href="https://github.com/markdown-it/markdown-it-mark">&lt;mark&gt;</a></h3>
+<h3 id="mark"><a rel="external" href="https://github.com/markdown-it/markdown-it-mark">&lt;mark&gt;</a></h3>
 <p>==Marked text==</p>
-<h3 id="footnotes"><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
+<h3 id="footnotes"><a rel="external" href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
 <p>Footnote 1 link<sup class="footnote-reference"><a href="#first">1</a></sup>.</p>
 <p>Footnote 2 link<sup class="footnote-reference"><a href="#second">2</a></sup>.</p>
 <p>Inline footnote^[Text of inline footnote] definition.</p>
 <p>Duplicated footnote reference<sup class="footnote-reference"><a href="#second">2</a></sup>.</p>
 <div class="footnote-definition" id="first"><sup class="footnote-definition-label">1</sup>
 <p>Footnote <strong>can have markup</strong></p>
+<p>and multiple paragraphs.</p>
 </div>
-<pre style="background-color:#fafafa;color:#383a42;"><code><span>and multiple paragraphs.
-</span></code></pre>
 <div class="footnote-definition" id="second"><sup class="footnote-definition-label">2</sup>
 <p>Footnote text.</p>
 </div>
-<h3 id="definition-lists"><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
+<h3 id="definition-lists"><a rel="external" href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
 <p>Term 1</p>
 <p>:   Definition 1
 with lazy continuation.</p>
 <p>Term 2 with <em>inline markup</em></p>
 <p>:   Definition 2</p>
-<pre style="background-color:#fafafa;color:#383a42;"><code><span>    { some code, part of Definition 2 }
-</span><span>
-</span><span>Third paragraph of definition 2.
-</span></code></pre>
+<pre class="giallo" style="color: #383A42; background-color: #FAFAFA;"><code data-lang="plain"><span class="giallo-l"><span>    { some code, part of Definition 2 }</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Third paragraph of definition 2.</span></span></code></pre>
 <p><em>Compact style:</em></p>
 <p>Term 1
 ~ Definition 1</p>
 <p>Term 2
 ~ Definition 2a
 ~ Definition 2b</p>
-<h3 id="abbreviations"><a href="https://github.com/markdown-it/markdown-it-abbr">Abbreviations</a></h3>
+<h3 id="abbreviations"><a rel="external" href="https://github.com/markdown-it/markdown-it-abbr">Abbreviations</a></h3>
 <p>This is HTML abbreviation example.</p>
-<p>It converts &quot;HTML&quot;, but keep intact partial entries like &quot;xxxHTMLyyy&quot; and so on.</p>
+<p>It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.</p>
 <p>*[HTML]: Hyper Text Markup Language</p>
-<h3 id="custom-containers"><a href="https://github.com/markdown-it/markdown-it-container">Custom containers</a></h3>
+<h3 id="custom-containers"><a rel="external" href="https://github.com/markdown-it/markdown-it-container">Custom containers</a></h3>
 <p>::: warning
 <em>here be dragons</em>
 :::</p>
